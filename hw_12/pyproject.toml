@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hw-12"
+version = "0.1.0"
+description = ""
+authors = ["InvisUA <xndell001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+sqlalchemy = "^2.0.36"
+asyncpg = "^0.30.0"
+uvicorn = "^0.32.1"
+alembic = "^1.14.0"
+pydantic = {extras = ["email"], version = "^2.10.1"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+libgravatar = "^1.0.4"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
